@@ -1,0 +1,17 @@
+<div class="container-fluid mt-3">
+  <div class="row">
+      <div class="col-4"></div>
+      <div class="col-4">
+        <h3 class="mt-3">Calculadora</h3>
+        <input type="text" name="numero1" id="numero1" class="form-control" [(ngModel)]="numero1">
+        <input type="text" name="numero2" id="numero2" class="form-control mt-3" [(ngModel)]="numero2">
+        <div class="card mt-3">
+          <div class="card-body">
+            <h3>Resultado: </h3> {{resultado}}
+          </div>
+        </div>
+        <button type="button" class="btn btn-outline-primary mt-3" (click)="sumar()">Sumar</button>
+      </div>
+      <div class="col-4"></div>
+  </div>
+</div>
